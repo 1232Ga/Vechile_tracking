@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:textSize="14sp"
+    android:background="@color/color_garudauav_blue_line"
+    android:padding="4dp"
+    android:layout_marginRight="4pt"
+    android:gravity="left|center"
+    android:id="@+id/text1"
+    android:textColor="@color/white"
+
+    />

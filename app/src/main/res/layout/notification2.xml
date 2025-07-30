@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/oe"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="Number Of Vechicle Route Violation"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center|right"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/back_button"
+                android:src="@drawable/ic_baseline_clear_24"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="3pt"
+        android:layout_marginRight="3pt"
+        android:layout_marginBottom="10pt"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="6pt"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Vechile No."/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_height="match_parent"/>
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="6pt"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Start Violation Point"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="6pt"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="End Violation Point"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="6pt"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Violation \n KM"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#22000000"
+                android:visibility="visible" />
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:scrollIndicators="right"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5pt"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="UP 14 P 1345"/>
+
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Noida DND"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Delhi"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="20"/>
+                </LinearLayout>
+
+            </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="UP 14 P 1345"/>
+
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Noida DND"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Delhi"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="20"/>
+                </LinearLayout>
+
+            </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="UP 14 P 1345"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Noida DND"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Delhi"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="2pt"
+                            android:textSize="5pt"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="20"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="UP 14 P 1345"/>
+
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Noida DND"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Delhi"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="20"/>
+                </LinearLayout>
+
+            </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="UP 14 P 1345"/>
+
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Noida DND"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="2pt"
+                    android:textSize="5pt"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Delhi"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="2pt"
+                        android:textSize="5pt"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="20"/>
+                </LinearLayout>
+
+            </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"
+                    android:visibility="visible" />
+
+
+
+
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:background="@color/black" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

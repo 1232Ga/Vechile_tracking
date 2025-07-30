@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- we define border color and thick -->
+    <stroke
+        android:width="0dp"
+        android:text="hiiii"
+        android:color="#ababab" />
+
+    <corners
+        android:radius="34dp"
+        android:topLeftRadius="0dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        />
+
+
+    <gradient android:startColor="@color/color_garudauav_blue_line"
+        android:endColor="@color/color_garudauav_blue_line">
+
+    </gradient>
+</shape>

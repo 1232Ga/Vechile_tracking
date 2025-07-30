@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">VTS</string>
+    <string name="google_id">AIzaSyC1mefnF88BCHGzDBEmv2FYFYWkjtVli0w</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="hint"><font size="100">Choose Start Date</font></string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+
+    <string-array name="Type">
+        <item>Select List</item>
+        <item>Area Wise</item>
+        <item>Zone Wise</item>
+        <item>Route Wise</item>
+        <item>Mine Wise</item>
+    </string-array>
+
+
+    <string-array name="site">
+        <item>MONTHLY</item>
+        <item>DAILY</item>
+
+    </string-array>
+
+    <string-array name="identitynumber">
+        <!--        <item>Select Identity Number</item>-->
+        <item>LICENSE NUMBER</item>
+        <!--        <item>AADHAR NUMBER</item>-->
+        <!--        <item>VOTER ID</item>-->
+
+    </string-array>
+
+    <string-array name="offset">
+        <item>Interval</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+
+    </string-array>
+    <string name="title_activity_kilometer_report">KilometerReportActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

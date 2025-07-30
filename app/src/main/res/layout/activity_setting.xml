@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SettingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="1"
+        android:background="@color/color_garudauav_blue_line"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginTop="2dp"
+            android:onClick="back"
+            android:layout_gravity="left|center"
+            android:layout_weight=".1"
+            android:src="@drawable/ic_arrow_back_24"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight=".9"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Setting"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="9pt"
+        android:layout_marginRight="9pt"
+        android:layout_marginTop="24pt"
+        android:layout_marginBottom="4pt"
+        android:background="@drawable/settingback"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="24pt"
+                android:gravity="center"
+                android:id="@+id/profile"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:src="@drawable/account"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="true"
+                            android:text="Account"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+                        <ImageView
+
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="6pt"
+                            android:layout_weight=".5"
+                            android:src="@drawable/foerbadback"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="9pt"
+        android:id="@+id/changepass"
+        android:layout_marginRight="9pt"
+        android:layout_marginTop="4pt"
+        android:layout_marginBottom="4pt"
+        android:background="@drawable/settingback"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="24pt"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="30dp"
+
+                            android:src="@drawable/password"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="true"
+                            android:text="Change Password"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+                        <ImageView
+
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="6pt"
+                            android:layout_weight=".5"
+                            android:src="@drawable/foerbadback"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="9pt"
+        android:layout_marginRight="9pt"
+        android:layout_marginTop="4pt"
+        android:layout_marginBottom="4pt"
+        android:background="@drawable/settingback"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="24pt"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="30dp"
+
+                            android:src="@drawable/securityprivacy"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="true"
+                            android:text="Security &amp;Privacy"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="6pt"
+                            android:layout_weight=".5"
+                            android:src="@drawable/foerbadback"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="9pt"
+        android:layout_marginRight="9pt"
+        android:layout_marginTop="4pt"
+        android:layout_marginBottom="4pt"
+        android:background="@drawable/settingback"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="24pt"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="30dp"
+                            android:src="@drawable/hlpsuppoort"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="true"
+                            android:text="Help &amp;Support"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="6pt"
+                            android:layout_weight=".5"
+                            android:src="@drawable/foerbadback"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="9pt"
+        android:layout_marginRight="9pt"
+        android:layout_marginTop="4pt"
+        android:layout_marginBottom="4pt"
+        android:background="@drawable/settingback"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="24pt"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:src="@drawable/about"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="true"
+                            android:text="About"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="6pt"
+                            android:layout_weight=".5"
+                            android:src="@drawable/foerbadback"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

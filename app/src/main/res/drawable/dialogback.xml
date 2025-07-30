@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- we define border color and thick -->
+    <stroke
+        android:width="0dp"
+        android:text="hiiii"
+        />
+
+    <corners
+       android:topRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        />
+
+
+    <gradient android:startColor="@color/color_off_green"
+        android:endColor="@color/color_off_green">
+
+    </gradient>
+</shape>

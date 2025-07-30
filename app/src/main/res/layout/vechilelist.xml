@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:layout_marginLeft="9pt"
+    android:layout_marginRight="9pt"
+    android:layout_marginTop="4pt"
+    android:layout_marginBottom="4pt"
+    android:background="@drawable/vehicleownerlistback"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="49pt"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:id="@+id/menuimage1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left|center"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/truck"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Rfid"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+                <TextView
+                    android:id="@+id/tirlr"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="left"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_height="0dp"
+                    android:maxLength="70"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_marginRight="8pt"
+                android:gravity="center|right"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:layout_weight=".5"
+                    android:id="@+id/status"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".5"
+                    android:layout_height="0dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="6pt"
+                        android:id="@+id/view"
+                        android:src="@drawable/foerbadback"
+                        />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/delete_item"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="8pt"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight=".5"
+                    android:src="@drawable/delete"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

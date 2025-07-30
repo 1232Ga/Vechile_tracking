@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Fragment.WithoutSiteFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight=".8"
+            android:weightSum="1"
+            android:background="@drawable/vehicleownerback"
+            android:layout_marginLeft="10pt"
+            android:layout_height="38dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="6pt"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/search"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:singleLine="true"
+                android:id="@+id/Search"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginRight="20dp"
+                android:imeOptions="actionDone"
+                android:paddingLeft="4pt"
+                android:hint="Search"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:layout_marginLeft="5pt"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="59dp"
+                android:id="@+id/addrole"
+                android:visibility="gone"
+                android:src="@drawable/addition"
+                android:layout_height="35dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rolesrecycleview"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/Nodata"
+        android:visibility="gone"
+        android:text="No Data Found"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_height="400dp">
+
+    </TextView>
+</LinearLayout>
+
+
+</FrameLayout>

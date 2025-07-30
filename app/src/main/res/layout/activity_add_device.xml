@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddDeviceActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:background="@color/color_garudauav_blue_line"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginTop="2dp"
+            android:onClick="back"
+            android:layout_gravity="left|center"
+            android:layout_weight=".1"
+            android:src="@drawable/ic_arrow_back_24"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight=".9"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Add Device"
+                android:textSize="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint=" NAME"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        app:hintAnimationEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rolename"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:focusable="true"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint=" DESCRIPTION"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        android:textColorHint="@color/black"
+        app:hintAnimationEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:focusable="true"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/color_garudauav_blue_line"
+        android:fontFamily="serif"
+        android:text="Add DEVICE"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:visibility="gone"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:weightSum="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/back_button"
+                        android:layout_width="15pt"
+                        android:layout_height="15pt"
+                        android:tint="@color/black"
+                        android:src="@drawable/ic_arrow_back_24"
+                      />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/car"
+                android:visibility="visible"
+                android:background="#d4af37" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:layout_height="match_parent">
+       <ImageView
+           android:layout_width="match_parent"
+           android:scaleType="fitXY"
+           android:id="@+id/imageiveiww"
+           android:layout_height="match_parent"
+           android:src="@drawable/car_marker"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

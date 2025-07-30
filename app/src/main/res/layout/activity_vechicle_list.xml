@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.VechicleListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:background="@color/color_garudauav_blue_line"
+            android:orientation="horizontal"
+            android:layout_marginBottom="3dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:onClick="back"
+                android:layout_gravity="left|center"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_arrow_back_24"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight=".7"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Vehicles List"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_weight=".2"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Add vehcile"
+                    android:textSize="13dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight=".9"
+                android:weightSum="1"
+                android:background="@drawable/vehicleownerback"
+                android:layout_marginLeft="10pt"
+                android:layout_height="38dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="6pt"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/search"
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:id="@+id/Search"
+                    android:singleLine="true"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginRight="20dp"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="4pt"
+                    android:hint="Search"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight=".1"
+                android:gravity="center|left"
+                android:layout_marginLeft="5pt"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="49dp"
+                    android:id="@+id/addrole"
+                    android:src="@drawable/addition"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/rolesrecycleview"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/Category_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:behavior_peekHeight="0dp"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        >
+        <!--app:layout_behavior="@string/bottom_sheet_behavior"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:elevation="50dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                android:background="#F7F7F7"
+                android:layout_marginTop="8pt"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                tools:targetApi="lollipop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/oe"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/cancel_bottomsheet_item"
+                                android:src="@drawable/ic_baseline_clear_24"
+                                android:layout_alignParentRight="true" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5pt"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="Edit Role"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"
+                                android:shadowColor="@color/colorPrimary"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="#54F7F7F7"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="-50dp"
+                            android:layout_marginLeft="-50dp"
+                            android:layout_height="10dp">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Basic"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:shadowColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Role Name"
+                            android:padding="4dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:shadowColor="@color/colorPrimary"
+                            android:textSize="15dp" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:background="@null"
+                            android:padding="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/edit_item_name"
+                            android:textSize="7pt"
+                            android:gravity="bottom"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:minHeight="14pt"
+                            android:layout_marginTop="4dp"
+                            android:imeOptions="actionNext"
+                            android:hint="Enter Role"
+                            android:layout_marginRight="20pt"
+                            android:layout_height="wrap_content"/>
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="20pt"
+                            android:visibility="visible"
+                            android:background="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Description"
+                            android:padding="4dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:shadowColor="@color/colorPrimary"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:background="@null"
+                            android:padding="4dp"
+                            android:minHeight="15pt"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/edit_item_description"
+                            android:textSize="7pt"
+                            android:textColor="@color/black"
+                            android:gravity="bottom"
+                            android:imeOptions="actionNext"
+                            android:hint="Enter Description"
+                            android:layout_marginRight="20pt"
+                            android:layout_height="wrap_content"/>
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="20pt"
+                            android:visibility="visible"
+                            android:background="@color/white" />
+                        <EditText
+                            android:layout_width="110pt"
+                            android:layout_height="15pt"
+                            android:textStyle="bold"
+                            android:textSize="8pt"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:id="@+id/edit_item_id"
+                            android:hint="Slug"
+                            android:textColorHint="@color/black"/>
+
+
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="26pt"
+                            android:layout_marginTop="50dp"
+                            android:id="@+id/edit_item_button"
+                            android:textSize="8pt"
+                            android:background="@color/color_garudauav_blue_line"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text=" UPDATE ROLE"
+                            android:textColor="#fff" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

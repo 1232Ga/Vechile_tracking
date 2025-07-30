@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CurentsummaryReportActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="1"
+                android:background="@color/color_garudauav_blue_line"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="2dp"
+                    android:onClick="back"
+                    android:layout_gravity="left|center"
+                    android:layout_weight=".1"
+                    android:src="@drawable/ic_arrow_back_24"
+                    android:layout_height="30dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight=".7"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Current Summmary Report"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:id="@+id/printpdf"
+                        android:src="@drawable/pdf"
+                        android:layout_height="30dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="From Date"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12pt"
+                    android:padding="5dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/allvechicactivityback"
+                    android:id="@+id/fromdatevlue"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:visibility="visible"
+                    android:hint="Choose Date"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="To Date"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12pt"
+                    android:padding="5dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/allvechicactivityback"
+                    android:id="@+id/todatevlue"
+                    android:hint="Choose Date"
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/packagelistspin"
+                    android:layout_width="70pt"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spineeredit"
+                    android:gravity="center"
+                    android:overScrollMode="never"
+                    android:paddingLeft="20dp"
+                    android:paddingEnd="20dp"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Search Report"
+                    android:padding="4dp"
+                    android:textSize="15dp"
+                    android:id="@+id/searchreport"
+                    android:textColor="@color/white"
+                    android:background="@drawable/transparent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/linear"
+                    android:background="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5pt"
+                        android:gravity="center"
+                        android:id="@+id/Reoprtheadingname"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="9pt" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="60pt"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5pt"
+                            android:gravity="start|center_vertical"
+                            android:text="Day Start Address:"
+                            android:textColor="@color/black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textSize="7pt" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:visibility="gone"
+                            android:layout_height="match_parent"
+                            android:background="#fff"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/daystartaddress"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="7pt"
+                            android:textAlignment="center"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="5pt"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="60pt"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5pt"
+                            android:gravity="start|center_vertical"
+                            android:text="Day Start Time:"
+                            android:textColor="@color/black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textSize="7pt" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:visibility="gone"
+                            android:layout_height="match_parent"
+                            android:background="#fff"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/daystarttime"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="7pt"
+                            android:textAlignment="center"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="5pt"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="60pt"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5pt"
+                            android:gravity="start|center_vertical"
+                            android:text="Current Address:"
+                            android:textColor="@color/black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textSize="7pt" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:visibility="gone"
+                            android:layout_height="match_parent"
+                            android:background="#fff"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/currentaddrees"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="7pt"
+                            android:textAlignment="center"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="5pt"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="60pt"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5pt"
+                            android:gravity="start|center_vertical"
+                            android:text="Current Speed(in Km/H)"
+                            android:textColor="@color/black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textSize="7pt" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:visibility="gone"
+                            android:layout_height="match_parent"
+                            android:background="#fff"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/currestapeed"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="7pt"
+                            android:textAlignment="center"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="5pt"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="60pt"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5pt"
+                            android:gravity="start|center_vertical"
+                            android:text="Last Track Time (HH:MM)"
+                            android:textColor="@color/black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textSize="7pt" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:visibility="gone"
+                            android:layout_height="match_parent"
+                            android:background="#fff"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/lasttimetrack"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="7pt"
+                            android:textAlignment="center"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="5pt"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="60pt"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5pt"
+                            android:gravity="start|center_vertical"
+                            android:text="Total Distance \n(Km/H)"
+                            android:textColor="@color/black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textSize="7pt" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:visibility="gone"
+                            android:layout_height="match_parent"
+                            android:background="#fff"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/totaldist"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="7pt"
+                            android:textAlignment="center"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="5pt"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DasboradAllVechicleActivity.AllVechicleDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:background="@color/color_garudauav_blue_line"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginTop="2dp"
+            android:onClick="back"
+            android:layout_gravity="left|center"
+            android:layout_weight=".1"
+            android:src="@drawable/ic_arrow_back_24"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight=".7"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" Vehicle Details"
+                android:textSize="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:layout_height="match_parent">
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Unique Id:"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/uniqueid"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Vechicle No:"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/vechiclenum"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Start Date:"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/startdate"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="End Date:"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/enddate"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Source Address:"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/sourceaddress"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Destination Address:"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/destaddress"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Total Distance(in Km)"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/distance"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Total Running Time (HH:MM)"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/totalrunning"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Total Halt Time\n(HH:MM)"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/totalhalt"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60pt"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5pt"
+            android:gravity="start|center_vertical"
+            android:text="Total Distance\n( In Km)"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/totaldistance"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5pt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+</LinearLayout>

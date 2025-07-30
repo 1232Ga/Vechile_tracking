@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AllReportsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:background="@color/color_garudauav_blue_line"
+            android:orientation="horizontal"
+            android:layout_marginBottom="3dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:onClick="back"
+                android:layout_gravity="left|center"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_arrow_back_24"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight=".7"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Reports"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight=".2"
+                android:layout_height="match_parent">
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+                android:layout_width="50pt"
+                android:orientation="vertical"
+                android:id="@+id/ll_kmreport"
+                android:layout_weight="1"
+                android:layout_marginTop="3pt"
+                android:background="@drawable/reportback"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="3pt"
+                android:layout_marginRight="3pt"
+                android:layout_height="62pt">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="55dp"
+                        android:text="$"
+                        android:src="@drawable/ic_time_to_leave_24"
+                        android:textColor="@color/white"
+                        android:textSize="30pt"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="7pt"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="visible"
+                        android:textColor="@color/black"
+                        android:text="KM Report"/>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+                android:layout_width="50pt"
+                android:orientation="vertical"
+               android:id="@+id/consolidate"
+                android:layout_weight="1"
+                android:layout_marginTop="3pt"
+                android:background="@drawable/reportback"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="3pt"
+                android:layout_marginRight="3pt"
+                android:layout_height="62pt"
+           >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="55dp"
+                        android:text="$"
+                        android:src="@drawable/ic_directions_bus_24"
+                        android:textColor="@color/white"
+                        android:textSize="30pt"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="7pt"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="visible"
+                        android:textColor="@color/black"
+                        android:text="Consildate Report"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:padding="1dp"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:textSize="7pt"
+                        android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="50pt"
+                        android:orientation="vertical"
+                        android:id="@+id/ll_trackingreport"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3pt"
+                        android:background="@drawable/reportback"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3pt"
+                        android:layout_marginRight="3pt"
+                        android:layout_height="62pt">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="85dp"
+                                android:layout_height="55dp"
+                                android:text="$"
+                                android:src="@drawable/ic_time_to_leave_24"
+                                android:textColor="@color/white"
+                                android:textSize="30pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="7pt"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:text="Tracking Report"/>
+
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="50pt"
+                        android:orientation="vertical"
+                        android:id="@+id/ll_daywise"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3pt"
+                        android:background="@drawable/reportback"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3pt"
+                        android:layout_marginRight="3pt"
+                        android:layout_height="62pt"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="85dp"
+                                android:layout_height="55dp"
+                                android:text="$"
+                                android:src="@drawable/ic_directions_bus_24"
+                                android:textColor="@color/white"
+                                android:textSize="30pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="7pt"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:text="Day Wise Report"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:padding="1dp"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="7pt"
+                                android:text="0"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="50pt"
+                        android:orientation="vertical"
+                        android:id="@+id/ll_overspeed"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3pt"
+                        android:background="@drawable/reportback"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3pt"
+                        android:layout_marginRight="3pt"
+                        android:layout_height="62pt">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="85dp"
+                                android:layout_height="55dp"
+                                android:text="$"
+                                android:src="@drawable/ic_time_to_leave_24"
+                                android:textColor="@color/white"
+                                android:textSize="30pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="7pt"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:text="Overspeed Report"/>
+
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="50pt"
+                        android:orientation="vertical"
+                        android:id="@+id/currentsum"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3pt"
+                        android:background="@drawable/reportback"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3pt"
+                        android:layout_marginRight="3pt"
+                        android:layout_height="62pt"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="85dp"
+                                android:layout_height="55dp"
+                                android:text="$"
+                                android:src="@drawable/ic_directions_bus_24"
+                                android:textColor="@color/white"
+                                android:textSize="30pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="6pt"
+                                android:layout_marginLeft="5dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:text="Current Summary Report"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:padding="1dp"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="7pt"
+                                android:text="0"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="50pt"
+                        android:orientation="vertical"
+                        android:id="@+id/ll_idlereport"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3pt"
+                        android:background="@drawable/reportback"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3pt"
+                        android:layout_marginRight="3pt"
+                        android:layout_height="62pt">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="85dp"
+                                android:layout_height="55dp"
+                                android:text="$"
+                                android:src="@drawable/ic_time_to_leave_24"
+                                android:textColor="@color/white"
+                                android:textSize="30pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="7pt"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:text="IDLE Vehicle Report"/>
+
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="50pt"
+                        android:orientation="vertical"
+                        android:id="@+id/haltvehicle"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3pt"
+                        android:background="@drawable/reportback"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3pt"
+                        android:layout_marginRight="3pt"
+                        android:layout_height="62pt"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="85dp"
+                                android:layout_height="55dp"
+                                android:text="$"
+                                android:src="@drawable/ic_directions_bus_24"
+                                android:textColor="@color/white"
+                                android:textSize="30pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="7pt"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:text="Halt Vehicle Report"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:padding="1dp"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="7pt"
+                                android:text="0"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="50pt"
+                        android:orientation="vertical"
+                        android:id="@+id/ll_ignition"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3pt"
+                        android:background="@drawable/reportback"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3pt"
+                        android:layout_marginRight="3pt"
+                        android:layout_height="62pt">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="85dp"
+                                android:layout_height="55dp"
+                                android:text="$"
+                                android:src="@drawable/ic_time_to_leave_24"
+                                android:textColor="@color/white"
+                                android:textSize="30pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="6pt"
+                                android:layout_marginLeft="5dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:text="Ignition ON/OFF Report"/>
+
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="50pt"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:layout_marginTop="3pt"
+
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3pt"
+                        android:layout_marginRight="3pt"
+                        android:layout_height="62pt"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="85dp"
+                                android:layout_height="55dp"
+                                android:text="$"
+                                android:src="@drawable/ic_directions_bus_24"
+                                android:textColor="@color/white"
+                                android:textSize="30pt"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:visibility="gone"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:textSize="8pt"
+                                android:layout_marginLeft="15dp"
+                                android:visibility="visible"
+                                android:textColor="@color/black"
+                                android:text="Halt Vehicle Report"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:padding="1dp"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="7pt"
+                                android:text="0"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

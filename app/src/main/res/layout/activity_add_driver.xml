@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddDriverActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:background="@color/color_garudauav_blue_line"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginTop="2dp"
+            android:onClick="back"
+            android:layout_gravity="left|center"
+            android:layout_weight=".1"
+            android:src="@drawable/ic_arrow_back_24"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight=".8"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Add Driver"
+                android:textSize="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Driver Info."
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/addroleback"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="65pt"
+                    android:layout_height="65pt"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/ll_image"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/menuimage1"
+                        android:layout_width="62pt"
+                        android:scaleType="fitXY"
+                        android:layout_height="62pt"
+                        android:src="@drawable/imagebacks" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center|left"
+                        android:text="Driver Name"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/rolename"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight=".6"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:hint="---"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4pt"
+                        android:singleLine="true"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5pt"
+                    android:background="#3B000000"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center|left"
+                        android:text="Phone Number"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/phonenumber"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight=".6"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:hint="---"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="10"
+                        android:paddingLeft="4pt"
+                        android:singleLine="true"
+                        android:textSize="14dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5pt"
+                    android:background="#3B000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center|left"
+                        android:text="Address"
+                        android:textSize="13.8dp" />
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight=".6"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:hint="---"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="9pt"
+                        android:singleLine="true"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Driver Identity No."
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/addroleback"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center|left"
+                        android:text="Choose Driver Identity"
+                        android:textSize="13.8dp" />
+
+                    <Spinner
+
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/spinnerdriveridentity"
+                        android:layout_marginLeft="8dp"
+                        android:visibility="visible"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/spineeredit"
+                        android:gravity="center"
+                        android:entries="@array/identitynumber"
+                        android:overScrollMode="never"
+                        android:paddingLeft="20dp"
+                        android:paddingEnd="20dp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5pt"
+                    android:background="#3B000000"
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:visibility="gone"
+                    android:text="Upload Document Image"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/reportback"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="170dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="  + Upload Document Picture "
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="visible"
+                        android:id="@+id/addpicturetext"
+                        android:background="@drawable/reportback"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/image2"
+                        android:visibility="gone"
+                        android:src="@drawable/dumyimgae"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center|left"
+                        android:text="Driver Identity No."
+                        android:textSize="13.8dp" />
+
+                    <EditText
+                        android:id="@+id/identitynumber"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight=".6"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:hint="---"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4pt"
+                        android:singleLine="true"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/submit_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/newbtncolor"
+                    android:fontFamily="serif"
+                    android:text="Submit"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancelbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/cancelbtnback"
+                    android:fontFamily="serif"
+                    android:text="Cancel"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

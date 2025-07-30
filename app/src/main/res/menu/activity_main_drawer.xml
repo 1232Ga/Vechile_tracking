@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/scan"
+            android:title="My Trip"
+            android:visible="false"
+            android:icon="@drawable/ic_rip_origin_24"/>
+
+        <item
+            android:id="@+id/sites"
+            android:title="Site"
+            android:visible="true"
+            android:icon="@drawable/group"/>
+        <item
+            android:id="@+id/vechicltripss"
+            android:title="Live Tracking Trip"
+            android:visible="true"
+            android:icon="@drawable/tracking"/>
+        <item
+            android:id="@+id/triplist"
+            android:title="Trips List"
+            android:visible="true"
+            android:icon="@drawable/distance"/>
+        <item
+            android:id="@+id/roles"
+            android:title="Roles"
+            android:visible="true"
+            android:icon="@drawable/roles"/>
+
+
+
+        <item
+            android:id="@+id/user"
+            android:title="Users"
+            android:visible="true"
+            android:icon="@drawable/users"/>
+        <item
+            android:id="@+id/devicemanagement"
+            android:title="Device Management"
+            android:visible="false"
+            android:icon="@drawable/ic_rip_origin_24"/>
+
+        <item
+            android:id="@+id/vechicleownwrmanagement"
+            android:title="Vehicle Owner Management"
+            android:visible="true"
+            android:icon="@drawable/vehicleowner"/>
+        <item
+            android:id="@+id/vechiclelist"
+            android:title="Vehicle List"
+            android:visible="true"
+            android:icon="@drawable/vehicles"/>
+        <item
+            android:id="@+id/drivermanagement"
+            android:title="Driver Management"
+            android:visible="true"
+            android:icon="@drawable/drivers"/>
+        <item
+            android:id="@+id/vechiclreposrts"
+            android:title="Reports"
+            android:visible="true"
+            android:icon="@drawable/reports"/>
+        <item
+            android:id="@+id/vechiclehistory"
+            android:title="Vehicle History"
+            android:visible="true"
+            android:icon="@drawable/vehicles"/>
+        <item
+            android:id="@+id/changepassword"
+            android:title="Setting"
+            android:visible="true"
+            android:icon="@drawable/setting"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/Logout_button"
+            android:icon="@drawable/ic_login_24"
+            android:title="Logout" />
+    </group>
+
+    <group>
+
+    </group>
+
+    <!--    <item android:title="Invoices">-->
+    <!--        <menu>-->
+    <!--            <item android:id="@+id/nav_item_six"-->
+
+    <!--                android:title="Item 6" />-->
+    <!--            <item android:id="@+id/nav_item_seven"-->
+
+    <!--                android:title="Item 7" />-->
+    <!--        </menu>-->
+    <!--    </item>-->
+</menu>

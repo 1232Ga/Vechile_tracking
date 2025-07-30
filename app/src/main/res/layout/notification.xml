@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:textAlignment = "center"
+         android:background="@color/color_garudauav_blue_line"
+        android:layout_width = "match_parent"
+        android:layout_height = "65dp" />
+    <TextView
+        android:id = "@+id/text"
+        android:textSize = "18sp"
+        android:layout_marginTop="5pt"
+        android:textAlignment = "center"
+        android:text = "batter percentage"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp" />
+
+</LinearLayout>

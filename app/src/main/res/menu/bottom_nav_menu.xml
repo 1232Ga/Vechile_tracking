@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+    <item
+        android:title="Home"
+        android:visible="true"
+        android:id="@+id/home"
+
+        android:icon="@drawable/home"/>
+        <item
+
+            android:title="Tracking"
+            android:visible="true"
+            android:id="@+id/device"
+
+            android:icon="@drawable/tracking"/>
+
+        <item
+            android:title=""
+
+            android:visible="false"
+
+
+        />
+        <item
+
+            android:title="History"
+            android:visible="true"
+            android:id="@+id/histore"
+
+            android:icon="@drawable/history"/>
+        <item
+
+            android:title="Profile"
+            android:visible="true"
+            android:id="@+id/profile"
+
+            android:icon="@drawable/profile"/>
+    </group>
+</menu>

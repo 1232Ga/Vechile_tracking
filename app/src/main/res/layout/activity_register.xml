@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activity.RegisterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="19dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.499"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.051" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="-10dp"
+                android:layout_marginLeft="-10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/cuveredbgwhite"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="-30dp"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="70dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:text="Organization Registration"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textAllCaps="true"
+    android:fontFamily="@font/poppinssemibold"
+    android:textColor="#97000000"
+    android:textSize="19dp"
+    android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:hint="ORGANIZATION NAME"
+                            android:layout_marginTop="10dp"
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/orgnizationname"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:padding="5dp"
+
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:hint="WEBSITE URL"
+
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/websiteurl"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:padding="5dp"
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:hint="ADDRESS"
+
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/adddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:padding="5dp"
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:hint="PHONE NUMBER"
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginRight="2dp"
+                                android:id="@+id/phonenumber"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:maxLength="10"
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="User Registration"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textColor="#97000000"
+                                android:textSize="19dp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:hint="FIRST NAME"
+
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/firstname"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:padding="5dp"
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:hint="LAST NAME"
+
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/lastname"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:padding="5dp"
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:hint="EMAIL"
+
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/username"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:padding="5dp"
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:hint="PASSWORD"
+                            app:passwordToggleEnabled="true"
+
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:id="@+id/password"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+
+                            android:layout_marginRight="15dp"
+                            android:hint="CONFIRM PASSWORD"
+                            app:passwordToggleEnabled="true"
+
+                            app:hintAnimationEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:id="@+id/CONFIRMpassword"
+
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:focusable="true"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_marginTop="5pt"-->
+<!--    android:layout_marginLeft="10dp"-->
+<!--    android:layout_marginRight="10dp"-->
+<!--    android:layout_height="wrap_content">-->
+<!--    <RadioGroup-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:weightSum="1"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="170dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:fontFamily="sans-serif"-->
+<!--            android:text="Administrator"-->
+<!--            android:textSize="12dp" />-->
+<!--        <RadioButton-->
+<!--            android:layout_width="170dp"-->
+<!--            android:text="User"-->
+<!--            android:textSize="12dp"-->
+<!--            android:fontFamily="sans-serif"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </RadioGroup>-->
+<!--</LinearLayout>-->
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/submit_btn"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/newbtncolor"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Register"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="19pt"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textStyle="normal"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Aleardy Have An Account? "
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/color_garudauav_blue_line"
+                                android:textStyle="bold"
+                                android:textSize="12dp"
+                                android:text="Login."
+                                android:fontFamily="@font/poppins_regular"
+                                android:onClick="loginpage"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+
+</LinearLayout>
+
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

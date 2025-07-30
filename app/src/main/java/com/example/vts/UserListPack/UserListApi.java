@@ -1,0 +1,49 @@
+package com.example.vts.UserListPack;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+
+import com.example.vts.RoleListPack.RolelistInterface;
+import com.example.vts.base.CommonUtils;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+public class UserListApi {
+    private static Retrofit retrofit = null;
+
+    public static Retrofit getRetrofitInstance(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(CommonUtils.MyPREFERENCES,Context.MODE_PRIVATE);
+
+        OkHttpClient client = new OkHttpClient.Builder().addInterceptor(new Interceptor() {
+            @Override
+            public Response intercept(Chain chain) throws IOException {
+                System.out.println("lksjddlfsdf__ "+ sharedPreferences.getString(CommonUtils.shared_TOKENS,""));
+                Request newRequest  = chain.request().newBuilder()
+                        .addHeader("Authorization", "Bearer " + sharedPreferences.getString(CommonUtils.shared_TOKENS,""))
+                        .build();
+                return chain.proceed(newRequest);
+            }
+        }).build();
+
+
+        if (retrofit == null) {
+            retrofit = new Retrofit.Builder()
+                    .baseUrl("http://vtsdev.bluehawk.ai/")
+                    .client(client)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+        return retrofit;
+    }
+}

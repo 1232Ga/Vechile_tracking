@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="9pt"
+    android:layout_marginRight="9pt"
+    android:layout_marginTop="4pt"
+    android:layout_marginBottom="4pt"
+    android:background="@drawable/vehicleownerlistback"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="35pt"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="55dp"
+                    android:id="@+id/menuimage1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/dumyimgae"
+                    android:layout_height="55dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:id="@+id/tirlr"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".5"
+                    android:gravity="left"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_height="0dp"
+                    android:maxLength="70"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textSize="14.5sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:weightSum="1"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <ImageView
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="6pt"
+                    android:layout_weight=".5"
+                    android:src="@drawable/foerbadback"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

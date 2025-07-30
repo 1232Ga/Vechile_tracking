@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_garudauav_blue_line">#80AFCF</color>
+    <color name="yellow_gold">#80AFCF</color>
+
+    <color name="colorPrimaryDark_old">#474747</color>
+    <color name="colorPrimaryDark">#2b5464</color>
+    <!-- <color name="colorAccent">#0072BC</color> -->
+    <color name="colorAccent">#00aff0</color>
+    <color name="greenDark">#00aff0</color>
+    <color name="livecolour">#2E9614</color>
+    <color name="schedulecolour">#F8AB15</color>
+    <color name="completecolour">#FF0000</color>
+
+    <color name="colorPrimary">#80AFCF</color>
+    <color name="boxcolour">#8OAFCF</color>
+    <color name="dashcolor">#ff4500</color>
+    <color name="iconbackgroub">#80CF8D</color>
+
+    <color name="trans_black">#30000000</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+
+    <color name="color_green">#00aff0</color>
+    <color name="colorDarkBlue">#00aff0</color>
+    <!-- <color name="color_green">#0072BC</color>-->
+    <color name="color_green_dark">#033E7B</color>
+    <color name="color_darkshade_green">#033E7B</color>
+    <color name="color_transparent_green_old">#474747</color>
+    <color name="color_transparent_green">#2b5464</color>
+    <color name="color_off_green">#76ABCF</color>
+    <color name="lighttransparent">#71b5fa</color>
+    <color name="color_flight_plan">#00aff0</color>
+    <color name="app_default_color">#00aff0</color>
+
+    <color name="color_blue_line">#3388ff</color>
+    <color name="App_blue">#0077be</color>
+
+    <color name="color_inner_circle">#4062CAAC</color>
+    <color name="color_outer_circle">#40ffffff</color>
+
+    <color name="colorhalfTransluscentPrimary_old">#474747</color>
+    <color name="colorhalfTransluscentPrimary">#2b5464</color>
+    <color name="colorTransluscentPrimaryLoaderBg_old">#95474747</color>
+    <color name="colorTransluscentPrimaryLoaderBg">#ffffff</color>
+    <color name="colorTransluscentPrimary">#801b293c</color>
+    <color name="colorCardview">#805F6976</color>
+    <color name="colorLightPrimary">#201b293c</color>
+
+    <color name="textColorPrimary">#3b3c3b</color>
+    <color name="textColorSecondary">#3b3c3b</color>
+    <color name="colorRed">#d34836</color>
+    <color name="menudrawer">#2d2e2d</color>
+    <color name="menutext">#9D9D9D</color>
+    <color name="selectedmenutext">#dadada</color>
+    <color name="googlenormal">#d34836</color>
+    <color name="googlepressed">#933225</color>
+
+    <color name="white">#ffffff</color>
+    <color name="off_white">#90ffffff</color>
+    <color name="white_grayer">#d2d2d2</color>
+    <color name="light_grey">#ededed</color>
+    <color name="white_light">#50ffffff</color>
+    <color name="darker_grey">#C0C0C0</color>
+    <color name="black">#000000</color>
+    <color name="black1">#B0000000</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="darkgrey">#a8a8a8</color>
+    <color name="lightgrey">#e0e0e0</color>
+    <color name="tranparent">#00000000</color>
+    <color name="tranparentdark">#60000000</color>
+    <color name="tranparentcolorPrimary">#803F51B5</color>
+    <color name="blue">#0000FF</color>
+    <color name="app_theme_orange">#eb632f</color>
+    <color name="app_theme_orangedrak">#BD4212</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_color">#00FF0000</color>
+
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="active">#7EDE2C</color>
+    <color name="inactive">#DE2C2C</color>
+    <color name="proposed">#edf03d</color>
+
+    <color name="light_blue">#79CDCD</color>
+
+    <color name="colorPrimary1">#455399</color>
+    <color name="colorPrimaryDark1">#455399</color>
+    <color name="colorAccent1">#00c6ae</color>
+    <color name="msg_no_notes">#999</color>
+    <color name="hint_enter_note">#89A59F9F</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
+    <color name="hint_label">#ffffff</color>
+    <color name="bg_input_form">#ffffff</color>
+
+</resources>
+

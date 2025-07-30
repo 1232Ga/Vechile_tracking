@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/color_garudauav_blue_line"
+                    android:layout_height="59dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:id="@+id/searchbarll"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="40dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_weight=".12"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/circleback"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:id="@+id/iv_nav"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_baseline_menu_24"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:gravity="center|right"
+                            android:layout_weight=".72"
+                            android:id="@+id/ll_opeserachoff"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:id="@+id/searchopen"
+                                android:layout_height="20dp"
+                                android:src="@drawable/search"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".74"
+                            android:visibility="gone"
+                            android:id="@+id/ll_serach"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/oe"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:gravity="center"
+                                android:visibility="visible"
+                                android:paddingLeft="6pt"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:id="@+id/searchhide"
+                                    android:src="@drawable/search"
+                                    />
+                            </LinearLayout>
+                            <AutoCompleteTextView
+                                android:id="@+id/editText1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:visibility="visible"
+                                android:cursorVisible="false"
+                                android:paddingLeft="4pt"
+                                android:background="@null"
+                                android:hint="Search Site"
+                                android:textSize="13dp"
+                                android:textColorHint="@color/black1"
+                                android:imeOptions="actionSearch"
+                                android:inputType="textAutoComplete|textAutoCorrect"
+                                android:textColor="@color/black" >
+
+                                <requestFocus />
+                            </AutoCompleteTextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:background="@drawable/oe"
+                            android:weightSum="3"
+                            android:visibility="gone"
+                            android:layout_marginLeft="5pt"
+                            android:layout_weight=".74"
+                            android:layout_height="38dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="6pt"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:src="@drawable/search"
+                                    />
+                            </LinearLayout>
+
+                            <EditText
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:id="@+id/Search"
+                                android:imeOptions="actionDone"
+                                android:paddingLeft="4pt"
+                                android:hint="Search here"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_weight=".12"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/circleback"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:src="@drawable/notifications"
+                                android:layout_height="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="1pt"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:id="@+id/filerrbelo"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/searchbarll"
+                    android:visibility="gone"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/siterecycleview"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/content_main"
+                    android:id="@+id/innn"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <FrameLayout
+                    android:id="@+id/frame_nav"
+                    android:layout_width="match_parent"
+                    android:animateLayoutChanges="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:visibility="gone"
+                        android:background="@drawable/chartmapback"
+                        android:layout_height="35dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".5"
+                            android:id="@+id/ll_map"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Map"
+                                android:textStyle="bold"
+                                android:textSize="13dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_height="wrap_content"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="6dp"
+                                android:id="@+id/mapsview"
+                                android:layout_marginRight="6dp"
+                                android:background="@color/color_garudauav_blue_line"
+                                android:layout_height="3dp"></View>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".5"
+                            android:id="@+id/ll_chart"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Chart"
+                                android:textStyle="bold"
+                                android:textSize="13dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_height="wrap_content"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="6dp"
+                                android:id="@+id/chartview"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/color_garudauav_blue_line"
+                                android:layout_height="3dp"></View>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomappbar"
+                style="@style/Widget.MaterialComponents.BottomAppBar"
+                android:theme="@style/AppThemeMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="@null"
+                android:background="@null"
+                android:layout_marginLeft="-16dp"
+                android:layout_gravity="bottom">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomnavigationbar"
+                    android:layout_width="match_parent"
+                    android:theme="@style/NavigationTheme"
+                    app:labelVisibilityMode="labeled"
+                    app:itemTextColor="@color/navigation_text_color"
+                    android:background="@drawable/dashboardbottom"
+                    android:layout_height="match_parent"
+                    app:menu="@menu/bottom_nav_menu" />
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

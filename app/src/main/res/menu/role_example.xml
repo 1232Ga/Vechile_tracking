@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+    <item
+        android:id="@+id/deletesite"
+        android:title="Delete"
+
+        app:showAsAction="never"
+        android:icon="@drawable/dele"/>
+
+    <item
+        android:id="@+id/editsite"
+        android:title="Edit"
+        android:visible="false"
+        app:showAsAction="never"
+        android:icon="@drawable/edi"/></group>
+</menu>
